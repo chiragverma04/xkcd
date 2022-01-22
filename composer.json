@@ -1,9 +1,8 @@
 {
-  "require" : {
-    "silex/silex": "^2.0.4",
-    "monolog/monolog": "^1.22",
-    "twig/twig": "^2.0",
-    "symfony/twig-bridge": "^3"
+  "require": {
+    "sendgrid/sendgrid": "^7.9",
+      "vlucas/phpdotenv": "^5.4",
+      "sebastiansulinski/dotenv": "^2.1"
   },
   "require-dev": {
     "heroku/heroku-buildpack-php": "*"
