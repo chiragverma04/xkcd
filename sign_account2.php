@@ -42,7 +42,7 @@ $params = array(
     'fromname'  => "Email Verification",
     'subject'   => "Verify Email Address",
     'text'      => "I'm text!",
-    'html'      => "<strong>Click On the Confirmation Code to Verify Your Email Address http://127.0.0.1/rtcamp/confirmation.php?passkey=$confirm</strong>",
+    'html'      => "<strong>Click On the Confirmation Code to Verify Your Email Address https://sql6.freemysqlhosting.net/xkcd/confirmation.php?passkey=$confirm</strong>",
     //'x-smtpapi' => json_encode($js),
   );
 
