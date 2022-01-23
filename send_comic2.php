@@ -55,7 +55,7 @@ $res = $conn->query($query);
       'fromname'  => "Chirag Verma",
     'subject'   => " XKCD Comics ",
     'text'      => "I'm text!",
-    'html'      =>  "<img src=" .$image_url." alt=Random image />"." <a href='http://127.0.0.1/rtcamp/unsubscribe.php?email=$to'>"." <h4>Unsubscribe XKCD!</h4></a>",
+    'html'      =>  "<img src=" .$image_url." alt=Random image />"." <a href='http://xkcd-image.herokuapp.com/unsubscribe.php?email=$to'>"." <h4>Unsubscribe XKCD!</h4></a>",
     'files['.$filename.']' => new CurlFile($file_name_with_full_path, $filetype, $filename)
   );
   
