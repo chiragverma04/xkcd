@@ -1,22 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-	<title>Subscribe again</title>
-	<style>
-		*{
-			background-color: #DDA0DD;
-		}
-		h1{
-			text-align: center;
-			color: #000000;
-			font-family: sans-serif;
-			font-weight: bold;
-		}
-	</style>
-</head>
-<body> -->
-
-
 <?php
 
 include "database.php";

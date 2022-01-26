@@ -40,8 +40,11 @@ $params = array(
   );
 
 $request =  $url.'api/mail.send.json';
-
-
+if($request){
+echo "<h1>Thank You For Registering</h1>";
+echo "<h2>Confirmation link sent to your Email Address</h2>";
+echo "<h2>Click on the confirmation link to verify your email address</h2>";
+}
 $session = curl_init($request);
 curl_setopt ($session, CURLOPT_POST, true);
 curl_setopt($session, CURLOPT_HTTPHEADER, array('Authorization: Bearer ' . $pass));

@@ -13,7 +13,7 @@
                 echo "<html>"; echo "<body>";
                 echo "You've been unsubscribed..! " . " <br> ";
                 echo "Didn't mean to unsubscribe? " . "  " . 
-                 "<a href='http://127.0.0.1/rtcamp/subs_again.php?email=".$user_email."'><h1>Click to subscribe again!</h1></a>";
+                 "<a href='http://xkcd-image.herokuapp.com/subs_again.php?email=".$user_email."'><h1>Click to subscribe again!</h1></a>";
                  echo "</body>"; echo "</html>";
                 
         }
