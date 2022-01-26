@@ -54,11 +54,10 @@ curl_setopt($session, CURLOPT_HEADER, false);
 curl_setopt($session, CURLOPT_SSLVERSION, CURL_SSLVERSION_TLSv1_2);
 curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
 
-// obtain response
+
 $response = curl_exec($session);
 curl_close($session);
 
-// print everything out
 print_r($response);
     }
 }
