@@ -90,6 +90,15 @@
             </div></center>
 
         </form>
+        <?php
+           if (isset($_GET['email']))
+           {
+	        $id=$_GET['email'];
+
+            echo "<script type='text/javascript'>alert('$id');</script>";
+   
+           }
+             ?>
     
 
 
