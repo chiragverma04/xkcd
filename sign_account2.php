@@ -4,7 +4,15 @@ include "send1.php";
 include "username.php";
 
 $confirm=md5(uniqid(rand(1,999)));
-$useremail=$_POST['email'];
+//$useremail=$_POST['email'];
+if(isset($_POST['email'])){
+  $useremail=$_POST['email'];
+  echo "<h5>Success</h5>";
+  }
+  else{
+   echo " Mail is not set";
+  }
+
 $subscribe = 1;
 
 $qry= " SELECT * from reg_members WHERE emailid='$useremail'";
@@ -58,7 +66,7 @@ curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($session);
 curl_close($session);
 
-print_r($response);
+//print_r($response);
     }
 }
 ?>

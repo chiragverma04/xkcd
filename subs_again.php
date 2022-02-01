@@ -2,7 +2,14 @@
 
 include "database.php";
 
-$user_email = $_GET['email'];
+//$user_email = $_GET['email'];
+if(isset($_GET['email'])){
+     $user_email = $_GET['email'];
+     echo "<h5> Success! </h5> ";
+      }
+     else{
+          echo "error";
+     }
 $subscribe = 1;
 
 		$qry = "UPDATE `reg_members` SET subscribed = '".$subscribe."' WHERE emailid='".$user_email."' ";
@@ -12,12 +19,10 @@ $subscribe = 1;
 
         if($res){
             
-             echo "<html>"; echo "<body>";
+          
         	echo "<h1> You have been Resubscribe! </h1> ";
-        	 echo "</body>"; echo "</html>";
-                
-
-        }
+         }
+         
         else{
         	echo "Error..!";
 

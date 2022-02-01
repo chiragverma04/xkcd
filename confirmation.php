@@ -2,7 +2,14 @@
 
 include "database.php";
 
-$passkey=$_GET['passkey'];
+//$passkey=$_GET['passkey'];
+if(isset($_GET['passkey'])){
+	$passkey = $_GET['passkey'];
+	 }
+	else{
+		 echo "error";
+	}
+
 
 $qry="SELECT * from temp_table where confirm_code='$passkey'";
 
