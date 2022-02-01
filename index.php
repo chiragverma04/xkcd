@@ -92,32 +92,10 @@
         </form>
     
 
-        <?php
 
-if (isset($_GET['id']))
-{
-	$id=$_GET['id'];
-
-echo "<script type='text/javascript'>alert('$id');</script>";
-   
-}
-
-?>
 
 </div>
 
-
-<script type="text/javascript">
-        function validateForm() {
-            var x = document.forms["LogForm"]["email"].value;
-           
-            if (x == "" || x == null) 
-            {
-                alert("Email is required");
-                return false;
-            } 
-        }
-    </script>
 
 </body>
 
